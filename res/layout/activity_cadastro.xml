@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/vwEntrar"
+        style="@style/campos_cont"
+        android:layout_width="361dp"
+        android:layout_height="541dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/cantos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        style="@style/campos"
+        android:layout_width="231dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/campos"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/vwEntrar"
+        app:layout_constraintStart_toStartOf="@+id/vwEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/txtC" />
+
+    <TextView
+        android:id="@+id/txtC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Cadastre-se"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwEntrar"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/vwEntrar"
+        app:layout_constraintTop_toTopOf="@+id/vwEntrar" />
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        style="@style/campos"
+        android:layout_width="231dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/campos"
+        android:ems="10"
+        android:hint="Usuário"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtPassw"
+        app:layout_constraintEnd_toEndOf="@+id/vwEntrar"
+        app:layout_constraintStart_toStartOf="@+id/vwEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/txtC"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/edtPassw"
+        style="@style/campos"
+        android:layout_width="231dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/campos"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/vwEntrar"
+        app:layout_constraintEnd_toEndOf="@+id/vwEntrar"
+        app:layout_constraintStart_toStartOf="@+id/vwEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/edtNome"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCadastrarU"
+        style="@style/button"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/botao"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toBottomOf="@+id/vwEntrar"
+        app:layout_constraintEnd_toEndOf="@+id/vwEntrar"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/vwEntrar"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassw"
+        app:layout_constraintVertical_bias="0.934" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVoltar"
+        style="@style/button_voltar"
+        android:layout_width="142dp"
+        android:layout_height="37dp"
+        android:background="@drawable/botao_voltar"
+        android:drawableLeft="@drawable/ic_voltar"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwEntrar"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <TextView
+        android:id="@+id/txtListarUsuarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Listar Usuarios"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vwEntrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

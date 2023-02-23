@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/vwLista"
+        style="@style/campos_cont"
+        android:layout_width="331dp"
+        android:layout_height="594dp"
+        android:background="@drawable/cantos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtExp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Usuários ao todo"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="@+id/vwLista"
+        app:layout_constraintStart_toStartOf="@+id/vwLista"
+        app:layout_constraintTop_toTopOf="@+id/vwLista" />
+
+    <ListView
+        android:id="@+id/listaUsers"
+        android:layout_width="317dp"
+        android:layout_height="515dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vwLista"
+        app:layout_constraintEnd_toEndOf="@+id/vwLista"
+        app:layout_constraintStart_toStartOf="@+id/vwLista"
+        app:layout_constraintTop_toBottomOf="@+id/txtExp"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

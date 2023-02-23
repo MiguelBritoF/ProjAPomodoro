@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProjATecPomodoro</string>
+    <string name="txt_timer">Timer</string>
+    <string name="start_pomodoro">COMEÇAR POMODORO</string>
+    <string name="title_breaks">Numero De Pausas:</string>
+    <string name="title_time">Tempo (minutos):</string>
+    <string name="title_dialog">Escolha uma minutagem</string>
+    <string name="action_start">COMEÇAR</string>
+    <string name="title_cadastro">Não tem uma conta? Cadastre-se</string>
+
+</resources>
